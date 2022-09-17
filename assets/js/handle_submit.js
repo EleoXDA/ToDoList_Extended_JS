@@ -1,4 +1,7 @@
+let todosArray = []
+
 function handleSubmit(){
   let todos = document.getElementById('todo')
-  console.log(todos.value)
+  todosArray.push(todos.value)
+  console.log(todosArray)
 }
