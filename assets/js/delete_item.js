@@ -1,2 +1,2 @@
-function deleteTodoItem(id) {
+function deleteToDoItem(id) {
 }
