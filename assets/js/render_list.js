@@ -1,12 +1,15 @@
 function renderList(array){
   let listElement = `<ul class="list-group">`;
 
-  array.forEach(element => {
-    listElement += `<li class="list-group-item">${element}</li>`;
+  array.forEach((element, index) => {
+    listElement += `<li class="list-group-item d-flex justify-content-between">
+    <span>${element}</span> 
+    <button class="btn btn-danger btn-sm" onclick="deleteToDoItem('${index}')">Delete</button>
+    </li>`;
   });
   listElement += `</ul>`;
 
-  let todosContainer = document.getElementById('todos');
+  let todosContainer = document.getElementById('todo_list');
   todosContainer.innerHTML = listElement;
 
   console.log(listElement);
