@@ -11,6 +11,4 @@ function renderList(array){
 
   let todosContainer = document.getElementById('todo_list');
   todosContainer.innerHTML = listElement;
-
-  console.log(listElement);
 }
