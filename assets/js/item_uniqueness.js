@@ -4,6 +4,7 @@ function itemUniqueness(array,value) {
   array.forEach(element => {
     if(element === value) {
       error = 1;
+      todos.value = ''
     }
   });
 
