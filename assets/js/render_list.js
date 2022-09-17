@@ -1,6 +1,13 @@
 function renderList(array){
+  let listElement = `<ul class="list-group">`;
+
   array.forEach(element => {
-    element;
+    listElement += `<li class="list-group-item">${element}</li>`;
   });
-  console.log(array);
+  listElement += `</ul>`;
+
+  let todosContainer = document.getElementById('todos');
+  todosContainer.innerHTML = listElement;
+
+  console.log(listElement);
 }
