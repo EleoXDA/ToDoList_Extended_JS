@@ -6,7 +6,7 @@ function renderList(array){
   });
   listElement += `</ul>`;
 
-  let todosContainer = document.getElementById('todo');
+  let todosContainer = document.getElementById('todo_list');
   todosContainer.innerHTML = listElement;
 
   console.log(listElement);
