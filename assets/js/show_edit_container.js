@@ -1,7 +1,7 @@
 let showEditContainerCase = 0
 
 let currentEditIndex = 0;
-let currenttodoItem = '';
+let currentTodoItem = '';
 
 function showEditContainer(index) {
   let editContainer = document.getElementById('edit_container');
@@ -13,6 +13,7 @@ function showEditContainer(index) {
     editContainer.style.display = 'none';
     showEditContainerCase = 0;
   }
-  currentEditIndex = index;
-  todosArray[index] = document.getElementById('todo').value;
+  currentEditIndex = index
+  currentTodoItem = todosArray[index];
+  editContainer.value = todosArray[index];
 }
