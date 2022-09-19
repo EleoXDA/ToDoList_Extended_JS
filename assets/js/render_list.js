@@ -3,8 +3,11 @@ function renderList(array){
 
   array.forEach((element, index) => {
     listElement += `<li class="list-group-item d-flex justify-content-between">
-    <span>${element}</span> 
-    <button class="btn btn-danger btn-sm" onclick="deleteToDoItem('${index}')">Delete</button>
+    <span>${element}</span>
+    <div>
+    <button class="btn btn-warning btn-sm" onclick="showEditContainer('${index}')">Edit</button>
+    <button class="btn btn-danger btn-sm" onclick="deleteTodoItem('${index}')">Delete</button>
+    </div>
     </li>`;
   });
   listElement += `</ul>`;
