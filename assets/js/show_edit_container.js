@@ -2,8 +2,9 @@ let showEditContainerCase = 0
 
 let currentEditIndex = 0;
 let currentTodoItem = '';
-
+// function to show the edit container
 function showEditContainer(index) {
+  // get the edit container
   let editContainer = document.getElementById('edit_container');
   if (showEditContainerCase === 0) {
     editContainer.style.display = 'inline';
