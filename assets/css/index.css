@@ -1,3 +1,32 @@
-.stack-top{
+.one{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.btn-success{
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+}
+
+#two{
+  height: 0px;
+  position: relative;
+}
+
+#edit_container{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
   z-index: 2;
+  display: none;
+  top: -54px;
+}
+
+#edit-todo-btn {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
